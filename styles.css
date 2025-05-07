@@ -1,0 +1,160 @@
+:root {
+
+	/* Neutral Brand Colors */
+	--color-white: #fff;
+	--color-black: #000;
+	--color-cool-gray: #d9d9d9;
+	--color-warm-gray: #d7d2cb;
+    --color-oatmeal: #faf7ef;
+
+	/* Primary Brand Color */
+	--color-red: #ba0c2f;
+
+	/* Secondary Brand Color */
+	--color-green: #215732;
+
+	/* Accent Brand Colors */
+	--color-teal: #007d8a;
+	--color-mint: #b5e3d8;
+	--color-gold: #f1b434;
+	--color-coral: #ff6d6a;
+	--color-dark-green: #13322b;
+	--color-dark-red: #971b2f;
+
+	/* Additional Named Colors http://chir.ag/projects/name-that-color/ */
+	--color-alabaster: #f8f8f8;
+	--color-mine-shaft: #3d3d3d;
+	--color-gallery: #ececec;
+	--color-silver: #ccc;
+	--color-boulder: #767676;
+}
+
+/**
+* TYPOGRAPHY STYLES
+* These are necessary for both the header and footer styles.
+**/
+body {
+    font-family: "ivystyle-sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: calc(26 / 18); /* 1.444 */
+}
+
+/* The heading styles below are recommended, but not necessary */
+h1,
+h2,
+h3 {
+    font-family: "ivypresto-headline", serif;
+    font-weight: 400;
+    line-height: calc(26 / 18); /* 1.444 */
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 26px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+}
+
+.eyebrow {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-family: "ivystyle-sans", sans-serif;
+    font-weight: 600;
+}
+
+a,
+a:visited {
+    color: var(--color-dark-red);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* end typography styles */
+
+body {
+    background-color: var(--color-oatmeal);
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 30px 30px;
+}
+
+footer hr {
+    width: 100%;
+    height: 1px;
+    color: var(--color-red);
+    border: 4px solid var(--color-red);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+footer img {
+    height: 58px;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px,1px,1px,1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
